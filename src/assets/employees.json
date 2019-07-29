@@ -1,0 +1,34 @@
+[
+  {
+  "employeeId" : 1, 
+  "employeeName" : "Laura",
+  "employeeLastName" : "Susurros franceses",
+  "projectId" :100,
+  "angularProficiency" : "3.5",
+  "employeeBelt" : "2KYU"
+  },
+  {
+    "employeeId" : 2, 
+    "employeeName" : "Julian", 
+    "employeeLastName" : "Ortiz Ponce",
+    "projectId" : 101,
+    "angularProficiency" : "7.5",
+    "employeeBelt" : "1KYU"
+  },
+  {
+    "employeeId" : 3, 
+    "employeeName" : "Javier",
+    "employeeLastName" : "González Ramos",
+    "projectId" : 101,
+    "angularProficiency" : "10.0",
+    "employeeBelt" : "3DAN"
+  },
+  {
+    "employeeId" : 4, 
+    "employeeName" : "Luis",
+    "employeeLastName" : "Lazarillo ",
+    "projectId" : 101,
+    "angularProficiency" : "10.0",
+    "employeeBelt" : "2DAN"
+  } 
+]

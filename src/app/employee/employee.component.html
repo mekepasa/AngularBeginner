@@ -1,0 +1,46 @@
+<div class="container">
+    <!-- {{messageFromNestedComponent}} -->
+    <!-- <h2>Employee List</h2> -->
+    <!-- <p>Las directrices son para formatetar el texto en la vista</p>
+    <p>Los componentes son las vistas, lo que se muestra en el html</p> -->
+    <div class="table-responsive">
+    <table class="table" *ngIf = '(employees|async)?.length > 0' >
+    <thead> <tr style="text-align: left">
+    <!-- <th>Employee Id</th>  -->
+    <th>Nombre</th>
+    <th>Apellidos</th>
+    <th>Grado</th> 
+    <th>Ver ficha</th>
+    <!-- <th>Project Id</th> -->
+    <!-- <th>Angular Proficiency</th> -->
+    </tr> </thead> <tbody>
+    <tr *ngFor = 'let employee of employees|async' style="text-align: left"> 
+        <!-- Interpolation binding-->
+        <!-- <td>{{employeek.employeeId}}</td>  -->
+        <td>{{employee.employeeName}}</td> 
+        <td>{{employee.employeeLastName}}</td> 
+        <!-- <td>{{employee.employeeBelt}} </td>  -->
+        <td [style.color]="'blue'"> {{employee.employeeBelt}} </td>
+        <!-- <td [ngStyle]="{'color':getColor(employee.employeeBelt)}"> {{employee.employeeBelt}} (1) </td> -->
+        <!-- <td [style.color]="getColor(employee.employeeBelt)">{{employee.employeeBelt}}</td> -->
+        <!-- <td [ngStyle]="{'background-color':employee.employeeBelt == 'KYU' ? 'green' : 'black' }">{{employee.employeeBelt}}</td> -->
+        <!-- Property binding -->
+        <!-- <td [ngStyle]="{'background-color':employee.projectId == '101' ? 'green' : 'red' }">{{employee.projectId}}</td> -->
+        <!-- <td>{{employee.angularProficiency}}</td>-->
+        <!-- <td><nested-ratking [rating] = 'employee.angularProficiency' ></nested-rating></td> -->
+        <td><nested-rating [rating] = 'employee.angularProficiency'
+            (proficiencyClicked)= 'onProficiencyClicked($event)' ></nested-rating></td>
+    </tr> </tbody>
+    </table>
+    <!-- <button (click)="onClickInformation()">Information</button>
+    {{information}} -->
+    
+<!--     <div>
+       <label>name:
+            <input [(ngModel)]="name" placeholder=" Type your name here">
+       </label>
+      Hi {{name}} !!
+    </div> -->
+
+    </div>
+</div>

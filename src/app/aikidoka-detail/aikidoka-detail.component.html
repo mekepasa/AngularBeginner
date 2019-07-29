@@ -1,0 +1,94 @@
+<div class="container">
+    <div class="table-responsive">
+        <table class="table">
+            <tbody style="text-align: left">
+              <tr>
+                <input style="border-radius: 5px" type="text" [(ngModel)]="employeeName" placeholder="Nombre" />
+              </tr>
+              <tr>
+                <input style="border-radius: 5px" type="text" [(ngModel)]="employeeLastName" placeholder="Apellidos" />
+              </tr>
+              <tr>
+                  <input style="border-radius: 5px" type="text" [(ngModel)]="employeeBelt" placeholder="Kyu" />
+              </tr>
+            </tbody>
+        </table>
+      <button class="btn btn-primary" (click)="addEmployee()">Guardar</button>
+    </div>
+</div>
+
+
+<!--
+    div class="container">
+    <div class="table-responsive">
+    <table class="table">
+    <thead>
+        <p><img width="200" height="auto" class="center" alt="logo" src="/assets/resources/GeorgeClooney.jpg"></p>
+        <tr><th>Nombre:</th></tr>
+        <tr><th>Apellidos:</th></tr>
+        <tr><th>Grado:</th></tr>
+        <tr><th>Fecha de inicio:</th></tr>
+    </thead> 
+    <tbody>
+    </tbody>
+    </table>
+    </div>
+</div>-->
+
+<!-- <div class="container">
+  <div class="starter-template">
+    <div class="row">      	
+      <div class="col-md-12 mt-5">
+        <form [formGroup]="aikidokaForm" (ngSubmit)="onSubmit()">
+            
+          <div class="form-group">
+            <label>Nombre:</label>
+            <input type="text" formControlName="firstName" class="form-control" 
+            [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />
+            <div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">
+                <div *ngIf="f.firstName.errors.required">Por favor, ingresa tu Nombre</div>
+            </div>
+          </div>
+        
+          <div class="form-group">
+            <label>Apellidos:</label>
+            <input type="text" formControlName="lastName" class="form-control" 
+            [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />
+            <div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">
+                <div *ngIf="f.lastName.errors.required">Por favor, ingresa tu Apellido</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Grado:</label>
+            <select class="form-control" formControlName="grado"
+            [ngClass]="{ 'is-invalid': submitted && f.grado.errors }">
+                <option value="">Seleccionar</option>
+                <option value="4 DAN">4 Dan</option>
+                <option value="3 DAN">3 DAN</option>
+                <option value="2 DAN">2 DAN</option>
+                <option value="1 DAN">1 DAN</option>
+                <option value="1 KYU">1 KYU</option>
+                <option value="2 KYU">2 KYU</option>				      
+            </select>
+            <div *ngIf="submitted && f.grado.errors" class="invalid-feedback">
+                <div *ngIf="f.grado.errors.required">Por favor, Selecciona el grado</div>
+            </div>
+
+            <div>
+                <img width="200" height="auto" class="center" alt="logo" src="/assets/resources/GeorgeClooney.jpg">
+                <input type="file" (change)="cargandoImagen($event.target.file)">
+            </div>
+
+            <div class="form-group">
+                <button class="btn btn-primary" [disabled]="Loading">Añadir</button>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
